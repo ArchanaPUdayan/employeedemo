@@ -10,11 +10,16 @@ import { ViewallComponent } from './viewall/viewall.component';
 import { SearchempComponent } from './searchemp/searchemp.component';
 import { EditComponent } from './edit/edit.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminloginComponent
+  },
+  {
+    path:"add",
+    component:AddemployeeComponent
   },
   {
     path:"view",
@@ -27,6 +32,10 @@ const myRoute:Routes=[
   {
     path:"edit",
     component:EditComponent
+  },
+  {
+    path:"delete",
+    component:DeleteComponent
   }
 ]
 
@@ -38,7 +47,8 @@ const myRoute:Routes=[
     ViewallComponent,
     SearchempComponent,
     EditComponent,
-    NavbarComponent
+    NavbarComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
