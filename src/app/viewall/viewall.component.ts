@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./viewall.component.css']
 })
 export class ViewallComponent {
+  name="Archana"
 
 }
